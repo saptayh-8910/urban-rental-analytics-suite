@@ -57,9 +57,10 @@ SUM(Nights Stay) / SUM(Days in Month)
 
 ### 2. Regulatory Remaining Nights (Compliance)
 Logic to ensure compliance with the Annual Short-Term Rental Cap (e.g., 180 days).
-
+```sql
 -- "Annual_Limit" is a parameter set to 180 (or 90 for other regions)
 Annual_Limit - (SUM(Nights_Used_Current_Fiscal) + SUM(Future_Bookings))
+```
 
 ### 3. Channel Grouping (CASE Logic)
 Used to group various booking sources into clean categories for analysis.
