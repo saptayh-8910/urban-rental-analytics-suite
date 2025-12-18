@@ -12,11 +12,11 @@ This dashboard solves three critical business problems for urban property manage
 
 ```mermaid
 graph LR
-    A[Google Sheets<br/>(PMS Data Export)] -->|Data Blending| B(Looker Studio<br/>Data Source)
-    B -->|Calculated Fields<br/>& Parameters| C{Business Logic<br/>Layer}
-    C -->|Report A| D[Revenue Dashboard<br/>(ADR, RevPAR)]
-    C -->|Report B| E[Operations Dashboard<br/>(Occupancy, Cleaning)]
-    C -->|Report C| F[Compliance Dashboard<br/>(Regulatory Limits)]
+    A["Google Sheets<br/>(PMS Data Export)"] -->|Data Blending| B("Looker Studio<br/>Data Source")
+    B -->|"Calculated Fields<br/>& Parameters"| C{"Business Logic<br/>Layer"}
+    C -->|"Report A"| D["Revenue Dashboard<br/>(ADR, RevPAR)"]
+    C -->|"Report B"| E["Operations Dashboard<br/>(Occupancy, Cleaning)"]
+    C -->|"Report C"| F["Compliance Dashboard<br/>(Regulatory Limits)"]
     
     style C fill:#f9f,stroke:#333,stroke-width:2px
 ```
