@@ -64,13 +64,14 @@ Annual_Limit - (SUM(Nights_Used_Current_Fiscal) + SUM(Future_Bookings))
 
 ### 3. Channel Grouping (CASE Logic)
 Used to group various booking sources into clean categories for analysis.
-
+```sql
 CASE
   WHEN Source REGEXP 'airbnb' THEN 'Airbnb Official'
   WHEN Source REGEXP 'booking' THEN 'Booking.com'
   WHEN Source = 'google' THEN 'Google Hotel Ads'
   ELSE 'Direct Booking'
 END
+```
 
 ### 4. Revenue Per Available Room (RevPAR)
 A standard metric to measure revenue generation efficiency.
