@@ -1,4 +1,4 @@
-# CityStays: Hospitality Revenue & Operations Suite
+# Hospitality Revenue & Operations Suite
 
 This project is a comprehensive business intelligence suite designed to manage a portfolio of short-term rental properties in a major metropolitan market. It integrates **Revenue Management**, **Marketing Campaign Tracking**, and **Regulatory Compliance** into a unified Looker Studio dashboard.
 
